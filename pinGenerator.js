@@ -29,12 +29,17 @@ document.getElementById('keypad').addEventListener('click', function(event){
     }
     
 })
-
+var clicked = 0;
 function verifyPin() {
     const pin = document.getElementById('displayPin').value ;
     const typed = document.getElementById('typed-numbers').value;
     const success  = document.getElementById('notifyed');
     const faillError  = document.getElementById('failed');
+
+    clicked++;
+    if (clicked > 2) {
+        document.getElementById('verify').disabled = true;
+    }
 
     if (pin == typed) {
         

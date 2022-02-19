@@ -43,8 +43,8 @@
                             </div>
                     </div>
                     <div>
-                        <button type="submit" onclick="verifyPin()" class="submit-btn">Submit</button>
-                        <p class="action-left">3 try left</p>
+                        <button type="submit" id="verify" onclick="verifyPin()" class="submit-btn">Submit</button>
+                        <p class="action-left"><span id="veryfyTime">3</span> try left</p>
                     </div>
                 </div>
             </div>
@@ -53,13 +53,13 @@
             <p id="failed" class="notify">❌ Pin Didn't Match, Please try again</p>
             <p id="notifyed" class="notify">✅ Pin Matched... Secret door is opening for you</p>
         </div>
-        <div>
+        <!-- <div>
             <form action="/action_page.php">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" maxlength="10"><br><br>
                 <input type="submit" value="Submit">
               </form>
-        </div>
+        </div> -->
     </div>
 
     <script src="/pinGenerator.js"></script>
